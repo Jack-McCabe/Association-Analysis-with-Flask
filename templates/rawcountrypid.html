@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{%block body%}
+<!doctype html>
+<title>Association Analysis</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+<div class=page>
+  <h1>Association Analysis </h1>
+  {% for table in tables %}
+    {{ table|safe }} 
+  {% endfor %}
+</div>
+
+
+<button onclick="window.location.href='{{ url_for('userInputs' )}}';"> Back</button>
+
+
+
+
+{% endblock %}
+

@@ -1,0 +1,23 @@
+
+<!-- Inputs into assocation analysis  parametrs -->
+
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <h1> User Inputs </h1>
+    <h2> Please Input The Country(ex. 'US' or 'DN'), and PIDS you are looking for </h2>
+    
+    {% from "includes/_formhelp.html" import render_field %}
+    <form method="POST" action="">
+        <div class="form-group">
+            {{render_field(form.country, class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.pids, class_="form-control")}}
+        </div>
+        <p><input type="submit" class= "btn btn-primary" value="Submit"> </p>
+    </form>
+    
+    
+{% endblock %}
