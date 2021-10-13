@@ -1,2 +1,5 @@
-# Association-Analysis-with-Flask
-Association Analysis using Eclat. Using Flask to create a simple interface so non-technical people can run the analysis.
+# Supply Chain Association Analysis
+
+Uses different supply chain attributes to run a basic association analysis using ECLAT to find links between lead times. 
+
+Runs a basic application built on Flask.
